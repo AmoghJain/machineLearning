@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 population=[]
 profit=[]
 
-with open('D:\machine-learning-ex1\ex1\ex1data1.txt') as f:
+with open('ex1data1.txt') as f:
     lines = f.readlines()
 
 for line in lines:
