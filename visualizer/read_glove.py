@@ -1,3 +1,4 @@
+import sys
 def findMax(ll):
 	ns=[]
 	for i in ll:
@@ -12,7 +13,15 @@ def findMin(ll):
 			ns.append(float(j))
 	return min(ns)
 
-words=["drink ","bike "]
+words=[]
+
+if(len(sys.argv)>1):
+	args=len(sys.argv)
+ai=1
+while ai<args:
+	words.append(sys.argv[ai]+" ")
+	ai+=1
+
 results = []
 with open("glove.6B.100d.txt","r")as data:
 	lines=data.readlines()
